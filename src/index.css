@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default Dark Mode Neon Glow */
+.neon-text {
+  text-shadow: 0 0 5px var(--neon-color), 0 0 15px var(--neon-color);
+}
+
+.neon-shadow {
+  box-shadow: 0 0 8px var(--neon-color-rgba-light), 0 0 20px var(--neon-color-rgba-mid);
+}
+
+/* Light Mode Neon Adjustment for Readability */
+[data-theme='light'] .neon-text {
+  text-shadow: 0 0 2px var(--neon-color), 0 0 5px var(--neon-color-rgba-light);
+}
+
+[data-theme='light'] .neon-shadow {
+  box-shadow: 0 0 5px var(--neon-color-rgba-light), 0 0 10px var(--neon-color-rgba-mid);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Custom Progress Bar Styling */
+.progress-bar {
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--accent-color);
+  transition: width 1.5s ease-out;
+  width: 0;
+}
+
+/* Responsive and Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+.nav-link.active {
+  color: var(--neon-color);
+  font-weight: 700;
+}
+
+/* Default Dark Mode Variables */
+:root {
+  --bg-color: #0A192F;
+  --text-color: #CCD6F6;
+  --card-color: #112240;
+  --accent-color: #00FFC0;
+  --border-color: #233554;
+  --neon-color: #00FFC0;
+  --neon-color-rgba-light: rgba(0, 255, 192, 0.6);
+  --neon-color-rgba-mid: rgba(0, 255, 192, 0.4);
+}
+
+/* Light Mode Variables (applied via [data-theme='light']) */
+[data-theme='light'] {
+  --bg-color: #F8F8FF;
+  --text-color: #1E293B;
+  --card-color: #FFFFFF;
+  --accent-color: #3730A3;
+  --border-color: #D1D5DB;
+  --neon-color: #3730A3;
+  --neon-color-rgba-light: rgba(55, 48, 163, 0.3);
+  --neon-color-rgba-mid: rgba(55, 48, 163, 0.15);
+}
+
