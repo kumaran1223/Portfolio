@@ -13,7 +13,7 @@ const About = () => {
           <div className="md:col-span-3">
             <p className="text-xl text-[--text-color] leading-relaxed transition-colors duration-500">
               I am an Aspiring Web Developer with hands-on experience in building modern, performant solutions using{' '}
-              <strong>React.js, Python, and robust database technologies</strong>. I am currently pursuing my MCA at 
+              <strong>React.js, Python, and robust database technologies</strong>. I have completed my MCA at 
               MEASI Institute of Information Technology (2023-2025), building upon my BCA degree. My goal is to leverage 
               my full-stack knowledge to contribute to high-impact, innovative projects.
             </p>
