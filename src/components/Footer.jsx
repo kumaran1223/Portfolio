@@ -9,7 +9,7 @@ const Footer = () => {
       <p className="text-[--accent-color] font-bold text-lg mb-2 neon-text">
         AVAILABLE FOR WEBSITE DESIGN & DEVELOPMENT.
       </p>
-      <p className="text-[--text-color]/60">&copy; 2024 Kumaran.S Digital Architecture.</p>
+      <p className="text-[--text-color]/60">&copy; 2025 Kumaran.S Digital Architecture.</p>
       <a
         href="#home"
         onClick={scrollToTop}
